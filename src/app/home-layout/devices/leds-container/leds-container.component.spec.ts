@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeLayoutComponent } from './home-layout.component';
+import { LedsContainerComponent } from './leds-container.component';
 
-describe('HomeLayoutComponent', () => {
-  let component: HomeLayoutComponent;
-  let fixture: ComponentFixture<HomeLayoutComponent>;
+describe('LedsContainerComponent', () => {
+  let component: LedsContainerComponent;
+  let fixture: ComponentFixture<LedsContainerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeLayoutComponent ]
+      declarations: [ LedsContainerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HomeLayoutComponent);
+    fixture = TestBed.createComponent(LedsContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
