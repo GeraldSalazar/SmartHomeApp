@@ -1,10 +1,5 @@
 $base-color: rgb(255, 1, 221);
 
-:host{
-  margin-left: 94%;
-  margin-top: 5%;
-}
-
 #camera-device {
     font-size: 1.5rem;
     color: $base-color;
@@ -12,11 +7,11 @@ $base-color: rgb(255, 1, 221);
     border-radius: 50%;
     padding: 0.25rem;
     box-shadow: 0 0 0 0 $base-color;
-    animation: pulse-blue 2s infinite;
+    animation: pulse-effect 2s infinite;
     cursor: pointer;
 }
 
-@keyframes pulse-blue {
+@keyframes pulse-effect {
     0% {
       transform: scale(0.95);
       box-shadow: 0 0 0 0 lighten($base-color, 20%);

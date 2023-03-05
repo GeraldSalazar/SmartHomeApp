@@ -1,17 +1,17 @@
 $base-color: rgb(4, 0, 255);
 
-#door-device {
+button#door-device {
     font-size: 1.5rem;
     color: $base-color;
     background-color: transparent;
     border-radius: 50%;
     padding: 0.25rem;
     box-shadow: 0 0 0 0 $base-color;
-    animation: pulse-blue 2s infinite;
+    animation: pulse-effect 2s infinite;
     cursor: pointer;
 }
 
-@keyframes pulse-blue {
+@keyframes pulse-effect {
     0% {
       transform: scale(0.95);
       box-shadow: 0 0 0 0 lighten($base-color, 20%);
