@@ -1,4 +1,9 @@
-$base-color: rgb(72, 255, 0);
+$base-color: rgb(255, 1, 221);
+
+:host{
+  margin-left: 94%;
+  margin-top: 5%;
+}
 
 #camera-device {
     font-size: 1.5rem;

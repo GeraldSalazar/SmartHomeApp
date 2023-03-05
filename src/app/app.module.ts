@@ -9,6 +9,10 @@ import { LEDlightComponent } from './home-layout/devices/leds-container/ledlight
 import { DoorComponent } from './home-layout/devices/doors-container/door/door.component';
 import { DoorsContainerComponent } from './home-layout/devices/doors-container/doors-container.component';
 import { LedsContainerComponent } from './home-layout/devices/leds-container/leds-container.component';
+import { DevicesStatusComponent } from './devices-status/devices-status.component';
+import { LedsStatusInfoComponent } from './devices-status/leds-status-info/leds-status-info.component';
+import { DoorsStatusInfoComponent } from './devices-status/doors-status-info/doors-status-info.component';
+import { CameraStatusInfoComponent } from './devices-status/camera-status-info/camera-status-info.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { LedsContainerComponent } from './home-layout/devices/leds-container/led
     LEDlightComponent,
     DoorComponent,
     DoorsContainerComponent,
-    LedsContainerComponent
+    LedsContainerComponent,
+    DevicesStatusComponent,
+    LedsStatusInfoComponent,
+    DoorsStatusInfoComponent,
+    CameraStatusInfoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,22 @@
-
+$door-room1-margin-x: 28.75%;
+$door-room1-margin-y: 27%;
 app-door{
     position: absolute;
 }
 
 app-door.door-room1{
-    margin-left: 20%;
-    margin-top: 19%;
+    margin-left: $door-room1-margin-x;
+    margin-top: $door-room1-margin-y;
 }
 app-door.door-room2{
-    margin-left: 20%;
-    margin-top: 30%;
+    margin-left: $door-room1-margin-x;
+    margin-top: calc($door-room1-margin-y + 15%);
 }
 app-door.door-main{
-    margin-left: 26%;
-    margin-top: 45.5%;
+    margin-left: calc($door-room1-margin-x + 8%);
+    margin-top: calc($door-room1-margin-y + 37.5%);
 }
 app-door.door-back{
-    margin-left: 50.5%;
-    margin-top: 14.5%;
+    margin-left: calc($door-room1-margin-x + 43%);
+    margin-top: calc($door-room1-margin-y - 6.5%);
 }
