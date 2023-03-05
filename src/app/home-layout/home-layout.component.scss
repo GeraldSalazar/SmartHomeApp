@@ -7,26 +7,14 @@ main {
         margin: auto 0 auto 0;
         height: 95%;
     }
-    app-door{
+    app-doors-container, app-leds-container, app-camera{
         position: absolute;
+        width: 100%;
+        height: 95%;
     }
-    app-door.door-1{
-        margin-left: 20%;
-        margin-top: 19%;
+    app-camera.camera{
+        margin-left: 66%;
+        margin-top: 4%;
     }
-    app-door.door-2{
-        margin-left: 20%;
-        margin-top: 30%;
-    }
-    app-door.door-3{
-        margin-left: 26%;
-        margin-top: 45.5%;
-    }
-
-    app-door.door-4{
-        margin-left: 50.5%;
-        margin-top: 14.5%;
-    }
-
 
 }
