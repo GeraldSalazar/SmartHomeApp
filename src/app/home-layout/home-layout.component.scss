@@ -1,6 +1,32 @@
 main {
-    .house-layout{
-        min-width: 100%;
-        height: 100vh;
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    position: relative;
+    #house-layout-img{
+        margin: auto 0 auto 0;
+        height: 95%;
     }
+    app-door{
+        position: absolute;
+    }
+    app-door.door-1{
+        margin-left: 20%;
+        margin-top: 19%;
+    }
+    app-door.door-2{
+        margin-left: 20%;
+        margin-top: 30%;
+    }
+    app-door.door-3{
+        margin-left: 26%;
+        margin-top: 45.5%;
+    }
+
+    app-door.door-4{
+        margin-left: 50.5%;
+        margin-top: 14.5%;
+    }
+
+
 }
