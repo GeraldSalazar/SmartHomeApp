@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-doors-status-info',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class DoorsStatusInfoComponent {
 
+  @Input('name') doorName!: string;
+  @Input('state') isDoorOpen: boolean = false;
 }

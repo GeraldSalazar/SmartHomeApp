@@ -1,9 +1,9 @@
 <aside class="device-status-container">
     <h2>Current Device Status</h2>
     <hr width="95%">
-    <app-leds-status-info></app-leds-status-info>
+    <app-leds-status-info *ngFor="let led of ledsService.leds" [name]="led.name" [state]="led.state"></app-leds-status-info>
     <hr width="95%">
-    <app-doors-status-info></app-doors-status-info>
+    <app-doors-status-info *ngFor="let door of doorsService.doors" [name]="door.name" [state]="door.state"></app-doors-status-info>
     <hr width="95%">
     <app-camera-status-info></app-camera-status-info>
 </aside>

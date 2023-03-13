@@ -1,16 +1,16 @@
 <main>
     <img id="house-layout-img" src="../../assets/images/houseLayout.jpeg">
 
-    <app-door class="door-room1"></app-door>
-    <app-door class="door-room2"></app-door>
-    <app-door class="door-main"></app-door>
-    <app-door class="door-back"></app-door>
+    <app-door class="door-main" (click)="switchDoor(1)"></app-door>
+    <app-door class="door-room1" (click)="switchDoor(2)"></app-door>
+    <app-door class="door-room2" (click)="switchDoor(3)"></app-door>
+    <app-door class="door-back" (click)="switchDoor(4)"></app-door>
 
-    <app-ledlight class="led-room1"></app-ledlight>
-    <app-ledlight class="led-room2"></app-ledlight>
-    <app-ledlight class="led-living-room"></app-ledlight>
-    <app-ledlight class="led-kitchen"></app-ledlight>
-    <app-ledlight class="led-bathroom"></app-ledlight>
+    <app-ledlight class="led-room1" (click)="switchLight(1)"></app-ledlight>
+    <app-ledlight class="led-room2" (click)="switchLight(2)"></app-ledlight>
+    <app-ledlight class="led-living-room" (click)="switchLight(3)"></app-ledlight>
+    <app-ledlight class="led-kitchen" (click)="switchLight(4)"></app-ledlight>
+    <app-ledlight class="led-bathroom" (click)="switchLight(5)"></app-ledlight>
 
     <app-camera class="camera"></app-camera>
 

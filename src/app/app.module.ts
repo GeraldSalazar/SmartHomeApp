@@ -11,6 +11,7 @@ import { DevicesStatusComponent } from './devices-status/devices-status.componen
 import { LedsStatusInfoComponent } from './devices-status/leds-status-info/leds-status-info.component';
 import { DoorsStatusInfoComponent } from './devices-status/doors-status-info/doors-status-info.component';
 import { CameraStatusInfoComponent } from './devices-status/camera-status-info/camera-status-info.component';
+import { LedsService } from './services/leds.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { CameraStatusInfoComponent } from './devices-status/camera-status-info/c
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LedsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

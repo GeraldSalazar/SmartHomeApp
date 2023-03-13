@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DoorsService } from '../services/doors.service';
+import { LedsService } from '../services/leds.service';
 
 @Component({
   selector: 'app-devices-status',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class DevicesStatusComponent {
 
+
+  constructor(public ledsService: LedsService, public doorsService: DoorsService){
+  }
 }

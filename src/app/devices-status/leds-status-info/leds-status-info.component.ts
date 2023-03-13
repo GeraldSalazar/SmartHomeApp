@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-leds-status-info',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class LedsStatusInfoComponent {
 
+  @Input('name') ledName!: string;
+  @Input('state') isLedOn: boolean = false;
 }
