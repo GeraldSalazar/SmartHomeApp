@@ -12,6 +12,7 @@ import { LedsStatusInfoComponent } from './devices-status/leds-status-info/leds-
 import { DoorsStatusInfoComponent } from './devices-status/doors-status-info/doors-status-info.component';
 import { CameraStatusInfoComponent } from './devices-status/camera-status-info/camera-status-info.component';
 import { LedsService } from './services/leds.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LedsService } from './services/leds.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [LedsService],
   bootstrap: [AppComponent]

@@ -1,11 +1,16 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
+import { DeviceInfo } from './interfaces';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DoorsService {
 
-  constructor() { }
+  serverAddress: string = "http://localhost:3000/"
+  constructor(private http: HttpClient) { }
 
   public doors: any[] = [
     {id: 1, name: 'MAIN DOOR', state: false},
@@ -22,4 +27,11 @@ export class DoorsService {
       }
     });
   }
+
+  getMessage(): Observable<DeviceInfo> {
+    const headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8');
+    return this.http.get<DeviceInfo>(this.serverAddress+'login', {headers: headers});
+  }
+
+  
 }

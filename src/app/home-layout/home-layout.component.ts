@@ -13,9 +13,13 @@ export class HomeLayoutComponent {
 
   switchLight(ledID: number){
     this.ledsService.switchLED(ledID);
+
   }
 
   switchDoor(doorID: number){
+    this.doorsService.getMessage().subscribe((info) => {
+      console.log(info)
+    })
     this.doorsService.switchDoor(doorID);
   }
 
